@@ -1,0 +1,336 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Sora', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
+html {
+  font-size: 62.5%;
+}
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 58%;
+  }
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  line-height: 1.6;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.nav {
+  padding-inline: 6rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  row-gap: 3rem;
+  align-items: center;
+  padding-block: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .nav {
+    padding-inline: 3rem;
+  }
+}
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.nav .logo__name {
+  color: #100a42;
+  font-size: 2rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+.nav__items {
+  font-family: "Work Sans", sans-serif;
+}
+.nav__items > * {
+  color: #000;
+  font-weight: 500;
+  font-size: 1.6rem;
+}
+.nav__items > *:not(:last-child) {
+  margin-right: 2rem;
+}
+.nav__started {
+  color: #120b48;
+  font-family: "Sora", sans-serif;
+  font-weight: 600;
+  font-size: 1.6rem;
+}
+
+.h {
+  border-top: 6px solid rgb(244, 246, 248);
+}
+
+.home {
+  padding-block: 10rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
+  -moz-column-gap: 4rem;
+       column-gap: 4rem;
+  row-gap: 6.5rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 6rem;
+}
+@media screen and (max-width: 500px) {
+  .home {
+    padding-inline: 3rem;
+  }
+}
+.home__heading {
+  color: #141414;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(4rem, 3.1549rem + 2.2535vw, 6.4rem);
+  font-weight: 700;
+  width: min(100%, 10ch);
+  line-height: 1;
+  margin-bottom: 2rem;
+}
+.home__description {
+  color: rgba(0, 0, 0, 0.75);
+  font-family: "Inter", sans-serif;
+  font-size: clamp(1.8rem, 1.7296rem + 0.1878vw, 2rem);
+  font-weight: 400;
+  width: min(100%, 45ch);
+  margin-bottom: 4.8rem;
+}
+.home-btn {
+  display: flex;
+  padding: 2.2rem 2.4rem;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #120b48;
+  color: #fff;
+  text-align: center;
+  /* Typography/Button/B1 */
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+.home-2 {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.home-2 div img:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.img-lady {
+  position: relative;
+}
+
+.grid-blue {
+  position: absolute;
+  top: -55px;
+  right: -47px;
+  z-index: -1;
+}
+
+.boy-image {
+  position: relative;
+}
+.boy-grid {
+  position: absolute;
+  top: -10px;
+  left: -45px;
+  z-index: -1;
+}
+
+.feats {
+  background-color: #f4f6f8;
+  width: 100%;
+  padding-block: 5rem;
+}
+
+.features {
+  padding-block: 8rem;
+  padding-inline: 6rem;
+  background-color: #fff !important;
+}
+@media screen and (max-width: 500px) {
+  .features {
+    padding-inline: 3rem;
+  }
+}
+.features__heading {
+  color: #141414;
+  font-family: "Sora", sans-serif;
+  text-align: center;
+  font-size: clamp(3rem, 2.6479rem + 0.939vw, 4rem);
+  font-weight: 700;
+}
+.features__description {
+  color: #616163;
+  text-align: center;
+  font-family: Work Sans;
+  font-size: clamp(1.8rem, 1.7296rem + 0.1878vw, 2rem);
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  margin-top: 0.6rem;
+}
+.features__details {
+  margin-top: 6.4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 500px), 1fr));
+  justify-content: space-between;
+  gap: 3rem;
+}
+.features__details__heading {
+  color: #1b233d;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2rem, 1.7183rem + 0.7512vw, 2.8rem);
+  font-weight: 600;
+  margin-bottom: 0.6rem;
+}
+.features__details__description {
+  color: #616163;
+  font-family: "Work Sans", sans-serif;
+  font-size: clamp(1.8rem, 1.7296rem + 0.1878vw, 2rem);
+  font-weight: 400;
+  width: min(100%, 40ch);
+}
+.features-1 > div {
+  display: flex;
+  gap: 1.6rem;
+  align-items: start;
+}
+.features-1 > div:not(:last-child) {
+  margin-bottom: 4.8rem;
+}
+
+.works {
+  padding-block: 8rem;
+  padding-inline: 6rem;
+}
+@media screen and (max-width: 500px) {
+  .works {
+    padding-inline: 3rem;
+  }
+}
+.works__heading {
+  color: #141414;
+  font-family: "Sora", sans-serif;
+  font-size: clamp(3rem, 2.6479rem + 0.939vw, 4rem);
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: 700;
+}
+.works__details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-content: center;
+  justify-items: center;
+  gap: 3rem;
+  row-gap: 5rem;
+}
+.works__details div img {
+  margin: auto;
+}
+.works__details--title {
+  border-radius: 60px;
+  background: #120b48;
+  width: 50px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2.2rem, 1.8479rem + 0.939vw, 3.2rem);
+  font-weight: 700;
+  margin-bottom: 3.2rem;
+}
+.works__details__heading {
+  color: #1b233d;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-size: clamp(2.2rem, 1.9887rem + 0.5634vw, 2.8rem);
+  font-weight: 600;
+  margin-bottom: 1.6rem;
+}
+.works__details__description {
+  color: #616163;
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-size: clamp(1.8rem, 1.7296rem + 0.1878vw, 2rem);
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+footer {
+  background-color: #120b48;
+  padding-block: 9.8rem;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-inline: 6rem;
+  -moz-column-gap: 5rem;
+       column-gap: 5rem;
+  row-gap: 5rem;
+}
+@media screen and (max-width: 500px) {
+  .footer {
+    padding-inline: 3rem;
+  }
+}
+.footer__logo {
+  color: #fff;
+}
+.footer__item {
+  color: #fff;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+.footer__item:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.heading-4 {
+  color: #fff;
+  font-family: "Sora", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 2.5rem;
+}/*# sourceMappingURL=style.css.map */
